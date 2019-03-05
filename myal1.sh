@@ -5,14 +5,14 @@ echo "timedatectl set-ntp true"
 timedatectl set-ntp true
 echo "done"
 
-echo "mkfs.ext4 /dev/sda5"
-echo "mount /dev/sda5 /mnt"
+echo "mkfs.ext4 /dev/sda2"
+echo "mount /dev/sda2 /mnt"
 echo "mkdir /mnt/boot"
 echo "mount /dev/sdxY /mnt/boot"
-mkfs.ext4 -y /dev/sda5
-mount /dev/sda5 /mnt
+mkfs.ext4 -y /dev/sda2
+mount /dev/sda2 /mnt
 mkdir /mnt/boot
-mount /dev/sda2 /mnt/boot
+mount /dev/sda1 /mnt/boot
 echo "done"
 
 echo "vim /etc/pacman.d/mirrorlist"
